@@ -1,7 +1,6 @@
 .idea
 
 rootfs/flarum/app/storage/**/*
-rootfs/flarum/app/public/**/*
 
 node_modules/
 package-lock.json
