@@ -1,0 +1,73 @@
+{
+    "name": "flarum/flarum",
+    "description": "Delightfully simple forum software.",
+    "type": "project",
+    "keywords": [
+        "forum",
+        "discussion"
+    ],
+    "homepage": "https://flarum.org/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Flarum",
+            "email": "info@flarum.org",
+            "homepage": "https://flarum.org/team"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/flarum/core/issues",
+        "source": "https://github.com/flarum/flarum",
+        "docs": "https://docs.flarum.org/"
+    },
+    "require": {
+        "askvortsov/flarum-markdown-tables": "*",
+        "flarum-lang/chinese-simplified": "^1.3",
+        "flarum/approval": "*",
+        "flarum/automore": "*@dev",
+        "flarum/bbcode": "*@dev",
+        "flarum/clipboard": "*@dev",
+        "flarum/core": "^1.8",
+        "flarum/emoji": "*",
+        "flarum/flags": "*",
+        "flarum/game": "*@dev",
+        "flarum/lang-english": "*",
+        "flarum/likes": "*",
+        "flarum/lock": "*",
+        "flarum/markdown": "*",
+        "flarum/mentions": "*",
+        "flarum/nicknames": "*",
+        "flarum/statistics": "*",
+        "flarum/sticky": "*",
+        "flarum/subscriptions": "*",
+        "flarum/suspend": "*",
+        "flarum/tags": "*",
+        "fof/best-answer": "*",
+        "fof/cookie-consent": "^1.1",
+        "fof/default-group": "*",
+        "fof/doorman": "*",
+        "fof/drafts": "*",
+        "fof/filter": "*",
+        "fof/follow-tags": "*",
+        "fof/links": "^1.2",
+        "fof/nightmode": "*",
+        "fof/pages": "^1.0",
+        "fof/polls": "^2.1",
+        "fof/profile-image-crop": "*",
+        "fof/sitemap": "^2.2",
+        "fof/terms": "*",
+        "fof/upload": "*",
+        "glowingblue/redis-setup": "^1.2",
+        "ianm/follow-users": "*",
+        "jaeger/querylist": "^4.2",
+        "the-turk/flarum-mathren": "^1.0"
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "repositories": [{
+        "type": "path",
+        "url": "../../../extensions/*/"
+    }]
+}

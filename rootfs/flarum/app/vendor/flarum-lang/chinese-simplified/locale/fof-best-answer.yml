@@ -1,0 +1,93 @@
+fof-best-answer:
+  admin:
+    permissions:
+      best_answer: 为自己的主题选择最佳答案
+      best_answer_not_own_discussion: 为他人的主题选择最佳答案
+    settings:
+      label:
+        tags: 标签
+        general: 常规
+        reminders: 提醒事项
+        search: 搜索
+        advanced: 高级
+        reminders_notice: '要运行提醒功能，你必须正确配置 Flarum 调度器。'
+      allow_select_own_post: 允许自选
+      allow_select_own_post_help: 允许提问者将自己的帖子设为最佳答案
+      show_max_lines_label: 在后期预览中显示的最大行数
+      show_max_lines_help: 设置为0可禁用。如果主题的长度超过了配置的行数，它将在主题预览中被截断，并具有淡出效果。
+      select_best_answer_reminder_days: 提醒计时
+      select_best_answer_reminder_days_help: '于 n 天后提问者选择最佳答案。'
+      select_best_answer_tags_label: 具有最佳答案的主题标签
+      select_best_answer_tags_help: 选择在设置“最佳答案”时要添加到主题中的标签（如果有）。只允许使用辅助标签。如果删除“最佳答案”，这些标签将被删除。
+      schedule_on_one_server: '使用 onOneServer() 方法建立计划任务'
+      schedule_on_one_server_help: '需要 Redis/Memcache'
+      schedule_stop_overnight: 非工作时间禁用提醒
+      schedule_stop_overnight_help: '服务器时间 20:00 至 9:00'
+      schedule_log_output: 将调度程序的输出添加到日志存储中
+      show_filter_label: 显示已解决过滤项
+      show_filter_help: 在启用最佳答案的标签页面显示「已解决/未解决」过滤项
+      use_alt_ui: 按钮布局
+      use_alt_ui_help: 在帖子底部显示最佳答案选择按钮
+      documentation: 文档
+      enabled_tags_label: 开启标签
+      enabled_tags_help: 选择要为其启用最佳答案的标记（如果有）。这些标签将成为“Q&A”格式的标签，并能够设置最佳答案。
+      remind_tags_label: 提醒标签
+      remind_tags_help: 选择要发送提醒的标签（如果有）。提醒将仅发送给带有这些标签的讨论。
+      tags_info: |
+        如果标签已启用“最佳答案”，请为可以设置答案的每个用户组（自己的讨论、任何讨论）分配权限。权限可以全局分配（对于任何合成标签），也可以按标签分配。
+      solution_search: 解决方案搜索
+      solution_search_help: 能够搜索具有最佳答案的讨论
+      discussion_sidebar_jump_button: 在讨论侧边栏中显示跳转到最佳答案按钮
+      discussion_sidebar_jump_button_help: 在讨论侧边栏中添加一个按钮，该按钮会跳转到帖子流中的最佳答案。
+    edit_tag:
+      qna_label: 启用在此标签中设置的最佳答案
+      reminders: 发送提醒以设置此标签中主题的最佳答案
+  forum:
+    answered_badge: 已解决
+    this_best_answer: 设为最佳答案
+    remove_best_answer: 移除最佳答案
+    best_answer_button: 最佳答案
+    best_answer_label: '由 <a>{username}</a> 选择'
+    errors:
+      mismatch: 您选择的帖子在当前主题中不存在
+    notification:
+      best_answer_in_discussion: '{username} 选择了最佳答案'
+      content: 如果您的问题已解决，请选择一个最佳答案
+      awarded: '您的帖子被 {username} 设为最佳答案'
+      preferences:
+        awarded_best_answer: 有人将我的帖子设为最佳答案
+        best_answer_in_discussion: 我互动的主题有了最佳答案
+        select_best_answer: 提醒我选择自己主题的最佳答案
+    index:
+      ask_question: 提问
+      cannot_ask_question: 提问已关闭
+      solved_link: 已解决
+      unsolved_link: 等待解决
+    filter:
+      all_label: 全部问题
+      solved_label: 已解决
+      unsolved_label: 等待解决
+      accessible_label: 已解决/未解决
+    composer:
+      titlePlaceholder: 问题标题
+    user:
+      best-answer-count: '{count, plural, { {count} 次助人} other {{count} 次助人}}'
+    search:
+      discussions_solutions_heading: "与解决方案的讨论"
+      all_discussions_solutions_button: "搜索包含解决方案的所有讨论 \"{query}\""
+    discussion:
+      jump_to_best_answer_button: 查看最佳答案
+  email:
+    subject:
+      awarded: '您的帖子被 {display_name} 设为最佳答案'
+      ba-set: '{display_name} 选择了一个最佳答案'
+      select: 您的问题得到回答了吗？
+    body:
+      awarded: "{recipient_display_name}，你好！\n\n干得漂亮，您在【{discussion_title}】发表的回复刚刚被 {actor_display_name} 选为最佳答案。感谢你的耐心帮助。\n\n点击此处查看回复：{discussion_url}\n"
+      ba-set: "{recipient_display_name}，你好！\n\n{actor_display_name} 刚刚为你参与讨论的主题【{discussion_title}】选择了最佳答案。\n\n去看看吧：{discussion_url}\n"
+      select: "{recipient_display_name}，你好！\n\n你的主题「{discussion_title}」已经有了很多回复。\n\n如果其中有可以帮助你解决问题的，你可以把他选为最佳答案，这样不仅能让后来者快速找到解决问题的办法，也可以激励帮助你的人。\n\n点击此处查看主题：{discussion_url}，并选择最佳答案。\n\n此致\n"
+fof-user-directory:
+  lib:
+    sort:
+      most_best_answers: 最多最佳答案
+      least_best_answers: 最少最佳答案

@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+/usr/bin/redis-server
+s6-svscanctl -qz /etc/s6.d

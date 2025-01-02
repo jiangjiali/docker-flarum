@@ -1,0 +1,10 @@
+flarum-bbcode:
+  forum:
+    quote:
+      wrote: 写字
+    hidden_content: 隐藏内容
+    reply_to_see: 您需要 {reply} 并刷新才能查看内容
+    button_empty_two_squares: 添加段首空两格
+    button_reply_tooltip: 添加隐藏内容
+    button_timeline1_tooltip: 添加带图标的时间线内容
+    button_timeline2_tooltip: 添加带颜色的时间线内容

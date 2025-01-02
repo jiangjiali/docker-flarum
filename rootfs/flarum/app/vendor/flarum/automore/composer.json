@@ -1,0 +1,32 @@
+{
+  "name": "flarum/automore",
+  "description": "Automatically clicks the 'load more' button when it comes into view.",
+  "keywords": [
+    "flarum",
+    "automatic",
+    "load",
+    "more"
+  ],
+  "type": "flarum-extension",
+  "license": "MIT",
+  "require": {
+    "flarum/core": "^1.8"
+  },
+  "authors": [
+    {
+      "name": "蒋佳李",
+      "email": "1036226474@qq.com",
+      "role": "Developer"
+    }
+  ],
+  "extra": {
+    "flarum-extension": {
+      "title": "加载更多",
+      "icon": {
+        "name": "fas fa-angle-double-down",
+        "backgroundColor": "#94dcff",
+        "color": "#fff"
+      }
+    }
+  }
+}

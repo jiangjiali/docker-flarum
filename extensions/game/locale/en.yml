@@ -1,0 +1,8 @@
+flarum-game:
+  admin:
+    permissions:
+      interface: Game Service
+    settings:
+      enable_push_msg: Enable Push
+  console:
+    push_msg_disabled: push are currently disabled in settings.

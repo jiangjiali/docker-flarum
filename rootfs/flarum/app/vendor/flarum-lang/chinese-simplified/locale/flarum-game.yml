@@ -1,0 +1,8 @@
+flarum-game:
+  admin:
+    permissions:
+      interface: 游戏服务
+    settings:
+      enable_push_msg: 开启推送
+  console:
+    push_msg_disabled: 在设置中未开启推送信息功能。

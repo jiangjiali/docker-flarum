@@ -1,0 +1,117 @@
+//回复可见内容
+.reply2see
+{
+  .reply2see_title
+  {
+    text-align: center;
+    font-weight: bold;
+    color: @primary-color;
+    padding: 5px 0 10px 0;
+  }
+
+  .reply2see_alert
+  {
+    color: @muted-color;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  border: 1px dashed @primary-color;
+  border-radius: 5px;
+  padding: 0 10px 10px 10px;
+  margin: 10px 0;
+}
+
+//时间线
+.cb-timeline {
+  max-width: 100%;
+  margin: 0px auto;
+  padding: 0 20px;
+  position: relative;
+}
+.cb-timeline .cb-center-line{
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  background: rgb(128,128,128) !important;
+  left: 15px;
+  top: 0px;
+  transform: translateX(-50%);
+}
+.cb-timeline .cb-center-line2{
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  left: 15px;
+  top: 0px;
+  transform: translateX(-50%);
+}
+
+.cb-timeline .cb-info{
+  margin: 0px 0 0 5px;
+  width: 100%;
+  padding: 10px;
+  position: relative;
+}
+
+.cb-timeline .cb-info .cb-content {
+  padding: 10px;
+  border-radius: 0px 15px 15px 15px;
+  background: rgba(128,128,128,0.1) !important;
+
+}
+
+.cb-timeline .cb-info .cb-content2 {
+  padding-top: 15px;
+}
+
+.cb-timeline .cb-info .icon {
+  position: absolute;
+  background: rgb(128,128,128) !important;
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 50%;
+  font-size: 14px;
+  box-shadow: 0 0 0 1px rgb(128,128,128) !important;
+  top: 10px;
+  left: -23px;
+  color: #fff !important;
+}
+
+.cb-timeline .cb-info .icon2 {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  top: 15px;
+  left: -18px;
+  transform: rotate(45deg);
+}
+
+.cb-timeline .cb-info .cb-timestamp{
+  font-size: 12px;
+  font-weight: 700;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.cb-timeline .cb-info .cb-timestamp2 {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 15px;
+  color: #fff !important;;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+@media(max-width: 440px){
+  .cb-timeline .cb-center-line,
+  .cb-timeline .cb-info::before,
+  .cb-timeline .cb-info .icon{
+    display: none;
+  }
+  .cb-timeline .cb-info {
+    margin: 10px 0;
+  }
+}

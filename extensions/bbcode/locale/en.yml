@@ -1,0 +1,10 @@
+flarum-bbcode:
+  forum:
+    quote:
+      wrote: wrote
+    hidden_content: HIDDEN CONTENT
+    reply_to_see: "You need to {reply} and refresh to see the content"
+    button_empty_two_squares: "Add empty two squares"
+    button_reply_tooltip: "Add hidden content"
+    button_timeline1_tooltip: "Add Timeline By Icon"
+    button_timeline2_tooltip: "Add timeline By Color"

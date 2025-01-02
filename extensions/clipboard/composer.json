@@ -1,0 +1,31 @@
+{
+    "name": "flarum/clipboard",
+    "description": "Allows the user to easly copy the text inside a code tag.",
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^1.8"
+    },
+    "authors": [
+        {
+            "name": "蒋佳李",
+            "email": "1036226474@qq.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Flarum\\Clipboard\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "拷贝代码",
+            "category": "feature",
+            "icon": {
+                "name": "far fa-copy",
+                "backgroundColor": "#2e86f2",
+                "color": "#fff"
+            }
+        }
+    }
+}
