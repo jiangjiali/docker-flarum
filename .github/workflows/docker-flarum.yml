@@ -31,7 +31,6 @@ jobs:
         sed -i 's/FLARUMADMINUSER/${flarum_admin_user}/g' Dockerfile
         sed -i 's/FLARUMADMINPASS/${flarum_admin_pass}/g' Dockerfile
         sed -i 's/FLARUMADMINMAIL/${flarum_admin_mail}/g' Dockerfile
-        sed -i "s/${search}/${replace}/g" example.txt
         docker login --username=${{ secrets.DOCKER_HUB_USER }} --password=${{ secrets.DOCKER_HUB_PWD }}
         docker build --no-cache -t jiangjiali/flarum:${{ github.event.inputs.tag_name }} .
         docker push jiangjiali/flarum:${{ github.event.inputs.tag_name }}
