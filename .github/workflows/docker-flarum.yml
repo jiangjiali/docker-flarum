@@ -15,14 +15,14 @@ jobs:
     - uses: actions/checkout@v4
     - name: 构建Docker镜像
       run: |
-        sed -i "s/DBHOST/${{ secrets.DB_HOST }}/g" Dockerfile
-        sed -i "s/DBUSER/${{ secrets.DB_USER }}/g" Dockerfile
-        sed -i "s/DBNAME/${{ secrets.DB_NAME }}/g" Dockerfile
-        sed -i "s/DBPASS/${{ secrets.DB_PASS }}/g" Dockerfile
-        sed -i "s/DBPORT/${{ secrets.DB_PORT }}/g" Dockerfile
-        sed -i "s/FLARUMADMINUSER/${{ secrets.FLARUM_ADMIN_USER }}/g" Dockerfile
-        sed -i "s/FLARUMADMINPASS/${{ secrets.FLARUM_ADMIN_PASS }}/g" Dockerfile
-        sed -i "s/FLARUMADMINMAIL/${{ secrets.FLARUM_ADMIN_MAIL }}/g" Dockerfile
+        sed -i 's/DBHOST/${{ secrets.DB_HOST }}/g' Dockerfile
+        sed -i 's/DBUSER/${{ secrets.DB_USER }}/g' Dockerfile
+        sed -i 's/DBNAME/${{ secrets.DB_NAME }}/g' Dockerfile
+        sed -i 's/DBPASS/${{ secrets.DB_PASS }}/g' Dockerfile
+        sed -i 's/DBPORT/${{ secrets.DB_PORT }}/g' Dockerfile
+        sed -i 's/FLARUMADMINUSER/${{ secrets.FLARUM_ADMIN_USER }}/g' Dockerfile
+        sed -i 's/FLARUMADMINPASS/${{ secrets.FLARUM_ADMIN_PASS }}/g' Dockerfile
+        sed -i 's/FLARUMADMINMAIL/${{ secrets.FLARUM_ADMIN_MAIL }}/g' Dockerfile
         docker login --username=${{ secrets.DOCKER_HUB_USER }} --password=${{ secrets.DOCKER_HUB_PWD }}
         docker build --no-cache -t jiangjiali/flarum:${{ github.event.inputs.tag_name }} .
         docker push jiangjiali/flarum:${{ github.event.inputs.tag_name }}
