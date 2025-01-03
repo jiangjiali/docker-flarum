@@ -1,7 +1,4 @@
 .idea
-
-rootfs/flarum/app/storage/**/*
-
 node_modules/
 package-lock.json
 rootfs/flarum/app/config.php
